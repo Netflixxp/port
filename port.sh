@@ -12,4 +12,4 @@ sed -i "s/#Port 22/Port $new_port/g" /etc/ssh/sshd_config
 # 重启SSH服务
 systemctl restart sshd.service
 
-echo "SSH端口已修改为$new_port"
+echo "原22端口已失效,SSH端口已修改为$new_port，请用新端口登录，如无法登录，请检查防火墙是否放行$new_port端口"
