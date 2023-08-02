@@ -8,4 +8,10 @@
 # 免责
 这个脚本是我自用的脚本，测试的机器和系统有限，难免造成失联等情况，<b>不要用于生成环境、不要用于生成环境、不要用于生成环境</b>。
 # 脚本
-    wget -O port.sh https://raw.githubusercontent.com/Netflixxp/port/main/port.sh && chmod +x port.sh && clear && ./port.sh
+```shell
+bash <(curl -Ls https://raw.githubusercontent.com/Netflixxp/port/main/port.sh)
+```
+或者
+```shell
+wget -O port.sh https://raw.githubusercontent.com/Netflixxp/port/main/port.sh && chmod +x port.sh && clear && ./port.sh
+```
