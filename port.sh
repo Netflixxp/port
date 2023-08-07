@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# 检测防火墙是否开启
+if systemctl is-active --quiet firewalld.service; then
+    echo "防火墙已开启，请手动放行新端口号"
+    exit 1
+fi
+
 # 读取用户输入的新的SSH端口号
 read -p "请输入新的SSH端口号：" new_port
 
